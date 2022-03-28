@@ -1,0 +1,326 @@
+// =============== extra small devices ===============
+@media screen and (max-width: 549px) {
+  .header .nav .menu {
+    padding: 0.5rem 1rem;
+  }
+  .home .container {
+    .social {
+      left: 0rem;
+      display: none;
+    }
+    .scroll {
+      right: 0rem;
+      display: none;
+    }
+    .buttons {
+      flex-direction: column;
+    }
+    .img {
+      width: 250px;
+      height: 400px;
+      img {
+        width: 200px;
+      }
+    }
+  }
+  .about {
+    .container {
+      grid-template-columns: 1fr;
+      .data .info {
+        grid-template-columns: repeat(1, 1fr);
+        h3 {
+          margin: 1rem;
+        }
+      }
+      p {
+        text-align: left;
+      }
+    }
+  }
+  .skills {
+    .container .content .box {
+      column-gap: 1rem;
+      flex-wrap: wrap;
+      .info h3 {
+        font-size: var(--small-font-size);
+      }
+    }
+  }
+  .services .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .portfolio .filter {
+    column-gap: 0.25rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    span {
+      padding: 0.25rem 0.5rem;
+    }
+  }
+  .contact .container > .info > {
+    .info .card {
+      h3,
+      span,
+      a {
+        font-size: var(--h3-font-size);
+      }
+      span {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .footer .container {
+    span {
+      font-size: var(--h3-font-size);
+      span {
+        display: block;
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+}
+// =============== extra extra small devices ===============
+@media screen and (max-width: 299px) {
+  .home .container {
+    .img {
+      width: 150px;
+      height: 253px;
+      img {
+        width: 120px;
+      }
+    }
+  }
+}
+// =============== small devices ===============
+@media screen and (min-width: 550px) {
+  .header .nav .menu {
+    width: 400px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .about {
+    .container {
+      .data .info {
+        grid-template-columns: repeat(3, 160px);
+        column-gap: 1rem;
+        justify-content: center;
+
+        h3 {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+      }
+      p {
+        padding: 0 5rem;
+      }
+    }
+  }
+  .skills .container {
+    justify-content: center;
+    .content {
+      width: 500px;
+      padding: 2rem 4rem;
+      .box {
+        justify-content: space-around;
+      }
+    }
+  }
+
+  .services .container {
+    grid-template-columns: repeat(3, 160px);
+    column-gap: 1rem;
+    justify-content: center;
+    .modal .content {
+      padding: 4.5rem 3rem 3rem;
+      width: 500px;
+    }
+  }
+  .portfolio {
+    .grid {
+      grid-template-columns: repeat(2, 250px);
+      justify-content: center;
+      img {
+        width: 300px;
+      }
+    }
+  }
+  .testimonials {
+    .container {
+      width: 500px;
+      margin: auto;
+
+      .card {
+        text-align: center;
+      }
+    }
+  }
+  .contact .container {
+    & > .info > {
+      .info {
+        grid-template-columns: repeat(3, 160px);
+        justify-content: center;
+        h3,
+        span,
+        a {
+          font-size: var(--h3-font-size);
+        }
+        span {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .form {
+      width: 500px;
+      margin: 0 auto;
+    }
+  }
+}
+
+// =============== meduim devices ===============
+@media screen and (min-width: 767px) {
+  .portfolio {
+    .grid {
+      grid-template-columns: repeat(2, max-content);
+    }
+  }
+  .contact .container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    column-gap: 3rem;
+    & > .info > .info {
+      grid-template-columns: 200px;
+      justify-content: center;
+      span {
+        margin: 0;
+      }
+    }
+    .form {
+      margin-top: 1.5rem;
+      width: 500px;
+      & > div > .button {
+        margin-top: 11rem;
+      }
+    }
+  }
+}
+
+// =============== large devices ===============
+@media screen and (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section {
+    padding: 4rem 0 1rem;
+  }
+  .section-title {
+    margin-bottom: 3.5rem;
+  }
+  .header {
+    .top {
+      height: calc(56px + 1rem);
+    }
+  }
+  .home .container {
+    row-gap: 4rem;
+    .social {
+      bottom: 9rem;
+      .link {
+        padding: 0.4rem;
+        font-size: 1.5rem;
+      }
+      &::after {
+        height: 40px;
+        width: 3px;
+        transform: translate(17px, 5px);
+      }
+    }
+    .scroll {
+      bottom: 13rem;
+      i {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      span {
+        font-size: 1rem;
+      }
+    }
+    .img {
+      width: 290px;
+      height: 400px;
+      img {
+        width: 220px;
+      }
+    }
+  }
+  .about {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      column-gap: 4rem;
+      img {
+        width: 350px;
+      }
+      .data {
+        text-align: left;
+        .box {
+          text-align: center;
+        }
+        p {
+          padding: 0 4rem 0 0;
+          margin-bottom: 2.5em;
+        }
+      }
+    }
+  }
+  .skills .container {
+    grid-template-columns: repeat(2, 350px);
+    column-gap: 2rem;
+    .content {
+      width: fit-content;
+      padding: 2rem;
+    }
+  }
+  .services .container {
+    grid-template-columns: repeat(3, 192px);
+    column-gap: 3rem;
+    .card {
+      padding: 5rem 2rem 1.5rem;
+    }
+  }
+  .portfolio .container {
+    gap: 3rem;
+    .card {
+      padding: 1.25rem;
+      img {
+        margin-bottom: 1rem;
+      }
+      h3 {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  .testimonials {
+    .container {
+      &.swiper.swiper-initialized.swiper-horizontal {
+        width: 750px;
+      }
+      .card {
+        padding: 1.5rem 2rem;
+      }
+    }
+  }
+  .contact .container {
+    column-gap: 6rem;
+  }
+  .footer {
+    ul:last-of-type a {
+      font-size: 1.25rem;
+      padding: 0.4rem;
+      border-radius: 0.5rem;
+    }
+  }
+}

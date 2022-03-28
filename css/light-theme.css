@@ -1,0 +1,8 @@
+.light-theme .scroll-header {
+  -webkit-box-shadow: 0 2px 4px rgba(3, 3, 3, 0.1);
+          box-shadow: 0 2px 4px rgba(3, 3, 3, 0.1);
+}
+
+.light-theme .nav .menu {
+  background-color: hsla(var(--second-hue), 32%, 90%, 0.8);
+}

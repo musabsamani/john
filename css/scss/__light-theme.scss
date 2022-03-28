@@ -1,0 +1,45 @@
+// =============== light theme
+.light-theme {
+  &::-webkit-scrollbar {
+    background-color: hsl(var(--second-hue), 8%, 66%);
+    &#{-thumb} {
+      background-color: hsl(var(--second-hue), 8%, 54%);
+      &:hover {
+        background-color: hsl(var(--second-hue), 8%, 44%);
+      }
+    }
+  }
+  .section-subtitle {
+    color: var(--text-color);
+  }
+  .scroll-header {
+    box-shadow: 0 2px 4px hsla(0%, 0%, 1%, 0.1);
+  }
+  .nav .menu {
+    background-color: hsla(var(--second-hue), 32%, 90%, 0.8);
+  }
+  .home .social .link {
+    box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, 0.1);
+  }
+  .about .box {
+    box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, 0.1);
+  }
+  .skills .content,
+  .services .card,
+  .portfolio .card,
+  .testimonials .card,
+  .contact .card {
+    box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1);
+  }
+  .footer {
+    h1,
+    ul:first-of-type li a,
+    span,
+    span span {
+      color: var(--title-color);
+    }
+    ul:last-of-type a {
+      background-color: var(--title-color);
+    }
+  }
+}
